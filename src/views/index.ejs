@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Motor de Búsqueda de Productos</title>
+</head>
+<body>
+  <h1>Buscar Productos</h1>
+  <form action="/" method="get">
+    <input type="text" name="name" placeholder="Nombre del producto">
+    <input type="number" name="priceMin" placeholder="Precio mínimo">
+    <input type="number" name="priceMax" placeholder="Precio máximo">
+    <input type="date" name="dateMin" placeholder="Fecha mínima">
+    <input type="date" name="dateMax" placeholder="Fecha máxima">
+    <input type="number" name="stockMin" placeholder="Stock mínimo">
+    <input type="number" name="stockMax" placeholder="Stock máximo">
+    <button type="submit">Buscar</button>
+  </form>
+
+  <% if (products) { %>
+    <h2>Resultados</h2>
+    <% products.forEach(product => { %>
+      <p><%= product.name %> | Price: <%= product.price %> | Stock: <%= product.stock %> | Created: <%= product.createdAt %>  </p>
+    <% }); %>
+  <% } %>
+</body>
+</html>

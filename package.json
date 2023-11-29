@@ -1,0 +1,20 @@
+{
+  "name": "product-search-engine",
+  "version": "1.0.0",
+  "description": "Product Search Engine: A Node.js and Express-based application featuring a powerful search API with multiple filters like price range, creation date, product name, and stock range. Includes an Express frontend for a seamless search experience.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1"
+  }
+}
